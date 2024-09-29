@@ -1,0 +1,328 @@
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Logo styles */
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Input styles */
+.header-input {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.input-address {
+  width: 99%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styles */
+.login-button,
+.logout-button,
+.add-to-cart-button,
+.checkout-button,
+.close-button,.modal-submit,.add-goods-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button,.modal-submit,.add-goods-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-button:hover,.modal-submit:hover,.add-goods-button:hover {
+  background-color: #0056b3;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+.delete-good-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+.delete-good-button:hover {
+  background-color: #c82333;
+}
+.add-to-cart-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.checkout-button {
+  background-color: blue;
+  color: white;
+}
+
+.close-button {
+  background-color: gray;
+  color: white;
+}
+
+/* Modal styles */
+.modal-overlay,
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container,
+.cart-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* User info styles */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info p {
+  margin: 0;
+  /* margin-right: 15px; */
+  font-size: 16px;
+}
+
+/* Cart styles */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.quantity-controls button {
+  margin: 0 5px;
+}
+
+.cart-total {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.cart-modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Pizza card styles */
+.pizza-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pizza-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.pizza-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  width: 400px; /* Width of card */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pizza-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.pizza-image {
+  width: 100%; /* Width of image */
+  height: auto; /* Auto height */
+  border-radius: 8px;
+}
+
+.pizza-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.pizza-description {
+  font-size: 0.9em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.pizza-price {
+  font-size: 1em;
+  color: green;
+}
+
+.pizza-rating {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Cart modal styles */
+
+.cart-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Cart button styles */
+.cart-button {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  padding: 10px 15px;
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Cart icon styles */
+.cart-icon {
+  margin-right: 8px; /* Space between icon and text */
+  width: 20px; /* Set width */
+  height: 20px; /* Set height */
+  fill: white; /* Ensures the icon is white */
+}
+.clear-cart-btn {
+  /* padding: 10px 15px; */
+  background-color: #dc3545; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-cart-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+.no-goods {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .cart-modal-content ul .cart-item {
+  display: flex;
+
+} */
+
+.cart-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
